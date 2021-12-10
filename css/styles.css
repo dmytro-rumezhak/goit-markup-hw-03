@@ -28,7 +28,7 @@ li {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -211,6 +211,7 @@ body {
   padding: 6px 22px;
 }
 
+.works-btn:active,
 .works-btn:hover,
 .works-btn:focus {
   background-color: var(--accent-color);
@@ -221,7 +222,7 @@ body {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--body-title-color);
+  background-color: var(--footer-color);
 }
 
 .hero .container {
@@ -248,18 +249,14 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
   margin-bottom: -30px;
+  margin-left: -30px;
 }
 
 .advantages-item {
-  width: calc((100% - 120px) / 4);
+  flex-basis: calc(100% / 4 - 30px);
   margin-bottom: 30px;
-  display: block;
-}
-
-.advantages-item:not(:nth-child(4n)) {
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .advantages-title {
@@ -292,16 +289,14 @@ body {
 .activity-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
   margin-bottom: -30px;
+  margin-left: -30px;
 }
 
 .activity-item {
+  flex-basis: calc(100% / 3 - 30px);
   margin-bottom: 30px;
-}
-
-.activity-item:not(:nth-child(3n)) {
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 /* Стилізація Наша команд*/
@@ -312,20 +307,18 @@ body {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
   margin-bottom: -30px;
+  margin-left: -30px;
 }
 
 .team-item {
+  flex-basis: calc(100% / 4 - 30px);
   margin-bottom: 30px;
+  margin-left: 30px;
   border-radius: 0 0 4px 4px;
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.team-item:not(:nth-child(4n)) {
-  margin-right: 30px;
 }
 
 .team-member-img {
