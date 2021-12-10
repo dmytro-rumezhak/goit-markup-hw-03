@@ -51,6 +51,10 @@ body {
 
 /* Стилізація header i footer */
 /* Стилізація лого */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -176,7 +180,13 @@ body {
 
 /* Стилізація Героя */
 .hero {
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .hero .container {
@@ -197,12 +207,6 @@ body {
 }
 
 /* Стилізація Преимущества */
-.advantages-list {
-  margin-bottom: 94px;
-
-  outline: 1px solid red;
-}
-
 .advantages-title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -217,8 +221,8 @@ body {
 }
 
 /* Стилізація Чем мы занимаемся*/
-.activity-list {
-  margin-bottom: 94px;
+.activity {
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -233,11 +237,6 @@ body {
 /* Стилізація Наша команд*/
 .team {
   background-color: var(--background-select-color);
-}
-
-.team > .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-member-img {
